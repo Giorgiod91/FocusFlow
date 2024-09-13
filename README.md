@@ -15,3 +15,23 @@
 - **Auto-Send to Police**: In critical situations, SafeWalk can automatically send your location and recordings to law enforcement.
 - **Safe Route Suggestions**: Receive suggestions for the safest routes based on lighting, traffic, and crime data (planned feature).
 - **Voice Activation**: Activate emergency mode hands-free with voice commands (e.g., "Help!") using Expo's native voice recognition capabilities.
+
+
+## 🛠️ Tech Stack
+
+
+- **Frontend (Mobile App)**:
+  - **Expo (React Native)**: Used for building the mobile app, providing access to native device features such as geolocation, camera, and microphone for GPS tracking and emergency recording.
+  - **JavaScript (ES6+)**: Core programming language used to build the app's logic and interface.
+  
+- **Backend & Realtime Database**:
+  - **Firebase Firestore**: Used for real-time GPS location tracking, securely storing user data, and facilitating fast communication between mobile devices and the server.
+  - **Firebase Authentication**: Manages user authentication securely via email, phone, or social accounts.
+  - **Firebase Cloud Functions**: Automates critical tasks such as sending alerts and processing real-time data.
+  - **Firebase Cloud Storage**: Safely stores audio and video recordings captured during emergencies.
+
+- **Realtime Communication**:
+  - **WebSockets / Firebase Realtime Database**: Facilitates continuous, real-time data flow for location updates, ensuring that trusted contacts always have up-to-date information.
+
+- **Cloud Services & Hosting**:
+  - **Firebase Hosting**: Hosts the web dashboard and backend functions, ensuring fast and scalable deployment.
