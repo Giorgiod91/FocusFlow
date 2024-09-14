@@ -1,16 +1,15 @@
 import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
+import { Button, Text, View } from "react-native";
 import { Link } from "expo-router";
 
 export default function App() {
   return (
-    <View className="flex-1 items-center justify-center bg-white">
+    <View className="flex-1 items-center justify-center bg-primary">
       <Text className="text-3xl">🚀 FocusFlow</Text>
       <Text> Boost Your Productivity Anywhere</Text>
       <StatusBar style="auto" />
-      <Link href="/profile" style={{ color: "blue" }}>
-        go to Profile
-      </Link>
+      <Button className="bg-secondary border-4" title="Login" />
+      <Link href="/profile">go to Profile</Link>
     </View>
   );
 }
