@@ -1,37 +1,38 @@
-# 🛡️ SafeWalk: A Safety Companion App
+# 🚀 FocusFlow: Boost Your Productivity Anywhere
 
-
-![img-1ZgAci5OYy5L06FwTBcm0AQd](https://github.com/user-attachments/assets/7bfaf397-01ea-406f-9151-97438cac781d)
-
-**SafeWalk** is a mobile and web app designed to provide safety for individuals when walking alone, especially at night. Built with **Expo** for mobile development. SafeWalk ensures help is always just a tap away with real-time location tracking, automatic emergency alerts, and audio/video recording.
+**FocusFlow** is a mobile app designed to enhance productivity, especially for remote workers and freelancers. Built with **Expo (React Native)**, FocusFlow helps you manage tasks, stay focused, and optimize your workflow with the Pomodoro technique and other essential productivity tools. More advanced features like real-time collaboration and productivity insights are planned for future releases.
 
 ---
 
-## 🌟 Features
+## 🌟 Features (MVP)
 
-- **Live Location Tracking**: Share your live GPS location with trusted contacts in real time. Implemented with **Expo** for mobile and **Next.js** for the web dashboard.
-- **Emergency Recording**: Start audio/video recording in case of an emergency and securely store the file in the cloud, using **Expo**'s native device features.
-- **Panic Button**: Trigger an instant alert to your trusted contacts, including your current location and recorded data.
-- **Auto-Send to Police**: In critical situations, SafeWalk can automatically send your location and recordings to law enforcement.
-- **Safe Route Suggestions**: Receive suggestions for the safest routes based on lighting, traffic, and crime data (planned feature).
-- **Voice Activation**: Activate emergency mode hands-free with voice commands (e.g., "Help!") using Expo's native voice recognition capabilities.
+- **Focus Timer (Pomodoro)**: Work in focused intervals (e.g., 25 minutes of work followed by a 5-minute break) with customizable time durations.
+- **Task Management**: Create, prioritize, and track tasks efficiently, with support for subtasks and deadlines.
+- **Basic Productivity Stats**: Visualize how much focused work you’ve completed through simple daily or weekly charts.
+- **Notifications**: Get notifications to start or stop work sessions and break times.
 
+### Planned Features (Future Releases)
+
+- **Real-Time Collaboration**: Share task boards with your team and collaborate on projects in real time.
+- **Advanced Analytics**: Gain insights into your work patterns, such as peak productivity hours and time spent on tasks.
+- **Distraction Blocker**: Block distracting apps and websites during focus sessions.
+- **Calendar Integration**: Sync with Google Calendar or Outlook to manage meetings and focused work seamlessly.
+- **Smart Task Recommendations**: Let FocusFlow suggest tasks based on urgency, priority, and past work patterns.
+- **Cross-Device Sync**: Sync tasks, timers, and progress across all your devices for seamless productivity.
+
+---
 
 ## 🛠️ Tech Stack
 
+### **Frontend (Mobile App)**:
+- **Expo (React Native)**: FocusFlow is built using Expo, allowing for cross-platform functionality on both iOS and Android. Expo provides access to essential native device features for notifications and time tracking.
+- **JavaScript (ES6+)**: The core language used to create the app's logic and manage task workflows.
+- **NativeWind (Tailwind CSS for React Native)**: NativeWind is used to style components using utility-first classes, making UI design faster and more consistent.
 
-- **Frontend (Mobile App)**:
-  - **Expo (React Native)**: Used for building the mobile app, providing access to native device features such as geolocation, camera, and microphone for GPS tracking and emergency recording.
-  - **JavaScript (ES6+)**: Core programming language used to build the app's logic and interface.
-  
-- **Backend & Realtime Database**:
-  - **Firebase Firestore**: Used for real-time GPS location tracking, securely storing user data, and facilitating fast communication between mobile devices and the server.
-  - **Firebase Authentication**: Manages user authentication securely via email, phone, or social accounts.
-  - **Firebase Cloud Functions**: Automates critical tasks such as sending alerts and processing real-time data.
-  - **Firebase Cloud Storage**: Safely stores audio and video recordings captured during emergencies.
+### **Backend & Real-Time Data**:
+- **Firebase Firestore**: Used for securely storing user tasks, productivity stats, and session history in real-time.
+- **Firebase Authentication**: Manages secure user login via email or social accounts.
 
-- **Realtime Communication**:
-  - **WebSockets / Firebase Realtime Database**: Facilitates continuous, real-time data flow for location updates, ensuring that trusted contacts always have up-to-date information.
-
-- **Cloud Services & Hosting**:
-  - **Firebase Hosting**: Hosts the web dashboard and backend functions, ensuring fast and scalable deployment.
+### **Cloud Services & Hosting**:
+- **Firebase Hosting**: Ensures that future web versions of FocusFlow (if needed) can be quickly deployed and scaled.
+- **Firebase Cloud Functions**: Automates background processes, such as generating reports or sending notifications for task reminders.
