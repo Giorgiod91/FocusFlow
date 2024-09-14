@@ -9,9 +9,9 @@ const TabIcon = ({ icon, color, focused }) => {
       <Image
         source={icon}
         style={{
-          width: 24,
-          height: 24,
-          tintColor: focused ? color : "#5f6368",
+          width: 30,
+          height: 30,
+          tintColor: focused ? "#fdba74" : "#fdba74",
         }}
         resizeMode="contain"
       />
@@ -30,6 +30,16 @@ const TabsLayout = () => {
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <TabIcon icon={icons.home} focused={focused} />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="create"
+          options={{
+            title: "Create",
+            headerShown: false,
+            tabBarIcon: ({ color, focused }) => (
+              <TabIcon icon={icons.create} focused={focused} />
             ),
           }}
         />
