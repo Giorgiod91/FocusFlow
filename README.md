@@ -3,7 +3,7 @@
 
 ![img-1ZgAci5OYy5L06FwTBcm0AQd](https://github.com/user-attachments/assets/7bfaf397-01ea-406f-9151-97438cac781d)
 
-**SafeWalk** is a mobile and web app designed to provide safety for individuals when walking alone, especially at night. Built with **Expo** for mobile development. SafeWalk ensures help is always just a tap away with real-time location tracking, automatic emergency alerts, and audio/video recording.
+**SafeWalk** is a mobile and web app designed to provide safety for individuals when walking alone, especially at night. Built with **Expo** for mobile development using the Next.js navigation approach. SafeWalk ensures help is always just a tap away with real-time location tracking, automatic emergency alerts, and audio/video recording.
 
 ---
 
