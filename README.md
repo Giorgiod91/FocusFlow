@@ -27,6 +27,7 @@
 ### **Frontend (Mobile App)**:
 - **Expo (React Native)**: FocusFlow is built using Expo, allowing for cross-platform functionality on both iOS and Android. Expo provides access to essential native device features for notifications and time tracking.
 - **JavaScript (ES6+)**: The core language used to create the app's logic and manage task workflows.
+- **NativeWind (Tailwind CSS for React Native)**: NativeWind is used to style components using utility-first classes, making UI design faster and more consistent.
 
 ### **Backend & Real-Time Data**:
 - **Firebase Firestore**: Used for securely storing user tasks, productivity stats, and session history in real-time.
