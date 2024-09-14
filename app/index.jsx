@@ -12,7 +12,7 @@ export default function App() {
       </Text>
       <StatusBar style="auto" />
       <Button className="bg-secondary border-4" title="Login" />
-      <Link href="/profile">go to Profile</Link>
+      <Link href="/home">go to Profile</Link>
     </View>
   );
 }
