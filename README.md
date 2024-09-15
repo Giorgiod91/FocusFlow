@@ -1,6 +1,7 @@
 # 🚀 FocusFlow: Boost Your Productivity Anywhere
 
-![eee](https://github.com/user-attachments/assets/95751cdf-338c-47d6-bc47-03ff8e9ecda0)
+![thisisit](https://github.com/user-attachments/assets/61f440b4-6c2b-4223-84bd-df9994d35438)
+
 
 
 
