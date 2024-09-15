@@ -12,6 +12,7 @@ import {
 import { Link, Redirect, router } from "expo-router";
 import CustomButton from "../components/CustomButton";
 import OrangeButton from "../components/CustomButton";
+import StarsBackground from "../components/StarsBackground";
 
 export default function App() {
   const progress = useRef(new Animated.Value(0)).current;
@@ -32,6 +33,7 @@ export default function App() {
 
   return (
     <SafeAreaView className="flex-1 bg-primary">
+      <StarsBackground starCount={50} />
       <ScrollView contentContainerStyle={{ flexGrow: 1 }} className="">
         <View className="flex-1 justify-center items-center px-5 ">
           {/* Header Text */}
@@ -105,6 +107,7 @@ export default function App() {
           </Link>
         </View>
       </ScrollView>
+      <StatusBar style="light" backgroundColor="#161622" />
     </SafeAreaView>
   );
 }
