@@ -10,6 +10,8 @@ import {
   Animated,
 } from "react-native";
 import { Link } from "expo-router";
+import CustomButton from "../components/CustomButton";
+import OrangeButton from "../components/CustomButton";
 
 export default function App() {
   const progress = useRef(new Animated.Value(0)).current;
@@ -35,14 +37,24 @@ export default function App() {
           <Image
             source={require("../assets/show.jpg")}
             style={{ width: 200, height: 200, borderRadius: 100 }}
+            resizeMode="contain"
           />
-          <Text className="text-3xl font-pblack text-white">🚀 FocusFlow</Text>
+          <Text className="text-3xl font-pblack text-white">
+            🚀 Focus{" "}
+            <Text
+              className="text-secondary bg-[#8a5120] "
+              style={{
+                transform: "skewX(-10deg)",
+              }}
+            >
+              Flow
+            </Text>
+          </Text>
           <Text className="text-white  font-pmedium">
             {" "}
             Boost Your Productivity Anywhere
           </Text>
-
-          <View
+          {/* <View
             style={{
               width: "60%",
               height: 10,
@@ -60,9 +72,10 @@ export default function App() {
                 borderRadius: 5,
               }}
             />
-          </View>
+          </View> */}
 
-          <Button className="bg-secondary border-4" title="Login" />
+          <OrangeButton title="Get Started" />
+
           <Link href="/home">go to Profile</Link>
         </View>
       </ScrollView>
