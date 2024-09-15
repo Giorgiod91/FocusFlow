@@ -1,5 +1,10 @@
 # 🚀 FocusFlow: Boost Your Productivity Anywhere
 
+![eee](https://github.com/user-attachments/assets/95751cdf-338c-47d6-bc47-03ff8e9ecda0)
+
+
+
+
 **FocusFlow** is a mobile app designed to enhance productivity, especially for remote workers and freelancers. Built with **Expo (React Native)**, FocusFlow helps you manage tasks, stay focused, and optimize your workflow with the Pomodoro technique and other essential productivity tools. More advanced features like real-time collaboration and productivity insights are planned for future releases.
 
 ---
