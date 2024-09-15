@@ -1,3 +1,5 @@
+import { ColorSchemeStore } from "nativewind/dist/style-sheet/color-scheme";
+
 const icons = {
   home: require("./home.png"),
   create: require("./create.png"),
