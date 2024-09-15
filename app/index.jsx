@@ -9,7 +9,7 @@ import {
   View,
   Animated,
 } from "react-native";
-import { Link } from "expo-router";
+import { Link, Redirect, router } from "expo-router";
 import CustomButton from "../components/CustomButton";
 import OrangeButton from "../components/CustomButton";
 
@@ -31,52 +31,78 @@ export default function App() {
   });
 
   return (
-    <SafeAreaView className="flex-1 h-full items-center justify-center bg-primary">
-      <ScrollView contentContainerStyle={{ height: "100%" }}>
-        <View className="w-full justify-center items-center h-full">
-          <Image
-            source={require("../assets/show.jpg")}
-            style={{ width: 200, height: 200, borderRadius: 100 }}
-            resizeMode="contain"
-          />
-          <Text className="text-3xl font-pblack text-white">
+    <SafeAreaView className="flex-1 bg-primary">
+      <ScrollView contentContainerStyle={{ flexGrow: 1 }} className="">
+        <View className="flex-1 justify-center items-center px-5">
+          {/* Header Text */}
+          <Text className="text-5xl font-extrabold text-white tracking-wide mb-5">
             🚀 Focus{" "}
             <Text
-              className="text-secondary bg-[#8a5120] "
+              className="text-secondary"
               style={{
-                transform: "skewX(-10deg)",
+                transform: [{ skewX: "-10deg" }],
+                color: "#FFA001",
               }}
             >
               Flow
             </Text>
           </Text>
-          <Text className="text-white  font-pmedium">
-            {" "}
+
+          {/* Hero Image */}
+          <Animated.Image
+            source={require("../assets/show.jpg")}
+            className="w-[220px] h-[250px] rounded-lg shadow-lg mb-8"
+            resizeMode="contain"
+            style={{
+              opacity: progress.interpolate({
+                inputRange: [0, 100],
+                outputRange: [0, 1],
+              }),
+              transform: [
+                {
+                  translateY: progress.interpolate({
+                    inputRange: [0, 100],
+                    outputRange: [50, 0],
+                  }),
+                },
+              ],
+            }}
+          />
+
+          <Text className="text-lg text-gray-300 font-medium text-center mb-8">
             Boost Your Productivity Anywhere
           </Text>
+
+          {/* Animated Progress Bar for later */}
           {/* <View
+          style={{
+            width: "60%",
+            height: 10,
+            backgroundColor: "#ccc",
+            borderRadius: 5,
+            overflow: "hidden",
+            marginVertical: 20,
+          }}
+        >
+          <Animated.View
             style={{
-              width: "60%",
-              height: 10,
-              backgroundColor: "#ccc",
+              width: progressWidth,
+              height: "100%",
+              backgroundColor: "#FFA001",
               borderRadius: 5,
-              overflow: "hidden",
-              marginVertical: 20,
             }}
-          >
-            <Animated.View
-              style={{
-                width: progressWidth,
-                height: "100%",
-                backgroundColor: "#FFA001",
-                borderRadius: 5,
-              }}
-            />
-          </View> */}
+          />
+        </View> */}
 
-          <OrangeButton title="Get Started" />
+          <OrangeButton
+            title="Get Started"
+            handlePress={() => router.push("/sign-in")}
+            className="w-[60%] py-4 rounded-full bg-[#FFA001] text-white font-semibold text-lg shadow-lg mb-6"
+          />
 
-          <Link href="/home">go to Profile</Link>
+          <Link href="/home" className="text-gray-400 text-base font-semibold">
+            Already have an account? Go to Profile
+          </Link>
         </View>
       </ScrollView>
     </SafeAreaView>
