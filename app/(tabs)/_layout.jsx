@@ -43,6 +43,46 @@ const TabsLayout = () => {
             ),
           }}
         />
+        <Tabs.Screen
+          name="tasks"
+          options={{
+            title: "Tasks",
+            headerShown: false,
+            tabBarIcon: ({ color, focused }) => (
+              <TabIcon icon={icons.tasks} focused={focused} />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="profile"
+          options={{
+            title: "Profile",
+            headerShown: false,
+            tabBarIcon: ({ color, focused }) => (
+              <TabIcon icon={icons.profile} focused={focused} />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="focusTimer"
+          options={{
+            title: "Focus Timer",
+            headerShown: false,
+            tabBarIcon: ({ color, focused }) => (
+              <TabIcon icon={icons.focusTimer} focused={focused} />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="productivity-stats"
+          options={{
+            title: "Productivity Stats",
+            headerShown: false,
+            tabBarIcon: ({ color, focused }) => (
+              <TabIcon icon={icons.ProductivityStats} focused={focused} />
+            ),
+          }}
+        />
       </Tabs>
     </>
   );

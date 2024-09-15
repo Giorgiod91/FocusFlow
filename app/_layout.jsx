@@ -25,10 +25,12 @@ const RootLayout = () => {
     if (fontsLoaded) {
       SplashScreen.hideAsync();
     }
-    if (!fontsLoaded && !error) {
-      return null;
-    }
   }, [fontsLoaded, error]);
+
+  if (!fontsLoaded) {
+    return null;
+  }
+
   return (
     <Stack className="bg-primary">
       <Stack.Screen name="index" options={{ headerShown: false }} />
