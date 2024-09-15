@@ -4,6 +4,9 @@
 
 ---
 
+## 🎯 Goals
+- I created FocusFlow because I couldn’t find an app that met my specific productivity needs. This project also serves as an opportunity to learn new skills in mobile development.
+
 ## 🌟 Features (MVP)
 
 - **Focus Timer (Pomodoro)**: Work in focused intervals (e.g., 25 minutes of work followed by a 5-minute break) with customizable time durations.
