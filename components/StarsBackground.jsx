@@ -1,13 +1,15 @@
-import React from "react";
-import { View } from "react-native";
+import React, { useState } from "react";
+import { ScrollView } from "react-native";
+import { TouchableOpacity, View } from "react-native";
 
-const StarsBackground = ({ starCount = 50 }) => {
+const StarsBackground = ({ starCount }) => {
   const generateStars = () => {
     let stars = [];
     for (let i = 0; i < starCount; i++) {
       const size = Math.random() * 3 + 2;
       const left = Math.random() * 100;
       const top = Math.random() * 100;
+
       stars.push(
         <View
           key={i}
@@ -23,6 +25,7 @@ const StarsBackground = ({ starCount = 50 }) => {
         />
       );
     }
+
     return stars;
   };
 

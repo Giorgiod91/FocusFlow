@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { StatusBar } from "expo-status-bar";
 import {
   Button,
@@ -17,6 +17,8 @@ import StarsBackground from "../components/StarsBackground";
 export default function App() {
   const progress = useRef(new Animated.Value(0)).current;
 
+  const [isPressed, setIsPressed] = useState(false);
+  const handleScroll = () => {};
   useEffect(() => {
     // Animate the progress bar
     Animated.timing(progress, {
@@ -34,6 +36,7 @@ export default function App() {
   return (
     <SafeAreaView className="flex-1 bg-primary">
       <StarsBackground starCount={50} />
+
       <ScrollView contentContainerStyle={{ flexGrow: 1 }} className="">
         <View className="flex-1 justify-center items-center px-5 ">
           {/* Header Text */}
