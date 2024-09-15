@@ -1,12 +1,13 @@
 import React from "react";
 import { TouchableOpacity, Text, StyleSheet, Dimensions } from "react-native";
 
-const OrangeButton = ({ title, onPress, style }) => {
+const OrangeButton = ({ title, onPress, style, isLoading, handlePress }) => {
   return (
     <TouchableOpacity
       style={[styles.button, style]}
       onPress={onPress}
-      activeOpacity={0.8}
+      activeOpacity={isLoading ? 0.5 : 0.8}
+      disabled={isLoading}
     >
       <Text style={styles.text}>{title}</Text>
     </TouchableOpacity>

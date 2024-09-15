@@ -33,12 +33,12 @@ export default function App() {
   return (
     <SafeAreaView className="flex-1 bg-primary">
       <ScrollView contentContainerStyle={{ flexGrow: 1 }} className="">
-        <View className="flex-1 justify-center items-center px-5">
+        <View className="flex-1 justify-center items-center px-5 ">
           {/* Header Text */}
-          <Text className="text-5xl font-extrabold text-white tracking-wide mb-5">
+          <Text className="text-5xl font-extrabold text-white tracking-wide mb-5 pr-3">
             🚀 Focus{" "}
             <Text
-              className="text-secondary"
+              className="text-secondary underline"
               style={{
                 transform: [{ skewX: "-10deg" }],
                 color: "#FFA001",
